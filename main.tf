@@ -41,7 +41,7 @@ resource "aws_s3_bucket" "s3_bucket" {
   force_destroy = var.force_destroy_state
 
   versioning {
-    enable = true
+    enabled = true
   }
 
   server_side_encryption_configuration {
@@ -57,7 +57,7 @@ resource "aws_s3_bucket" "s3_bucket" {
   }
 }
 
-resource "aws_bucket_public_access_block" "s3_bucket" {
+resource "aws_s3_bucket_public_access_block" "s3_bucket" {
   bucket = aws_s3_bucket.s3_bucket.id
 
   block_public_acls       = true
