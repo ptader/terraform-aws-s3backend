@@ -1,4 +1,4 @@
-variable "namepace" {
+variable "namespace" {
   description = "The project name to use for unique resource naming"
   default     = "s3backend"
   type        = string
