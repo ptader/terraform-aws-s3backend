@@ -20,7 +20,7 @@ resource "aws_iam_role" "iam_role" {
             }
         ]
     }
-    EOF
+  EOF
 
   tags = {
     ResourceGroup = local.namespace
