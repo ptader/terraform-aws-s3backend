@@ -6,7 +6,7 @@ variable "namepace" {
 
 variable "principal_arns" {
   description = "A list of principal arns allowed to assume the IAM Role"
-  type        = list(sting)
+  type        = list(string)
 }
 
 variable "force_destroy_state" {
